@@ -24,9 +24,6 @@ function App() {
     <main>
       <Card>
         <Form onSubmit={handleSubmit} />
-        <div className="img-wrapper">
-          <img src={arrow} alt="purple down arrow"/>
-        </div>
         <Age years={age.years} months={age.months} days={age.days}/>
       </Card>
     </main>
