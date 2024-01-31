@@ -1,7 +1,6 @@
 import './App.css'
 import {Age} from "./components/Age.jsx";
 import {Card} from "./components/Card.jsx";
-import arrow from "./assets/images/icon-arrow.svg";
 import {Form} from "./components/Form.jsx";
 import {useState} from "react";
 
@@ -23,6 +22,7 @@ function App() {
   return (
     <main>
       <Card>
+        <h1>Age calculator</h1>
         <Form onSubmit={handleSubmit} />
         <Age years={age.years} months={age.months} days={age.days}/>
       </Card>

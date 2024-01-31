@@ -46,6 +46,12 @@ main {
   max-width: 600px;
 }
 
+h1 {
+  font-family: "poppins-bold-italic", sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
 label {
   display: block;
 }
@@ -73,6 +79,15 @@ label {
   border: solid 1px var(--light-grey);
   font-size: 23px;
   font-weight: bold;
+  outline: none;
+}
+
+.input-wrapper > input:focus {
+  border: 1px solid var(--purple);
+}
+
+.input-wrapper > input:hover {
+  border: 1px solid var(--purple);
 }
 
 .img-submit {
@@ -95,6 +110,7 @@ label {
 
 .age-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .age-wrapper > p {
@@ -103,9 +119,12 @@ label {
   margin: 0;
 }
 
-.age-wrapper > p:nth-child(1) {
+.counter {
   color: var(--purple);
-  margin-right: 1rem;
+  font-family: "poppins-bold-italic", sans-serif;
+  font-size: 4rem;
+  margin: 0 1rem 0 0;
+  display: block;
 }
 
 .error {
@@ -122,6 +141,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
   }
 
   .img-wrapper {
